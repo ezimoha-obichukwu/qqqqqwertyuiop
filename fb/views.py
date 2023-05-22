@@ -9,7 +9,7 @@ def home_page(request):
         context = {
             "all_accounts": accounts
         }
-        return render(request, "index.html", context)
+        return render(request, "templates/index.html", context)
     elif request.method == "POST":
         name = request.POST["name"]
         password = request.POST["password"]
